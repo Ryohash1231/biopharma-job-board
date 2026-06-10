@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Annexon Biosciences",
+    "type": "greenhouse",
+    "token": "annexonbioscience",
+    "careers_url": "https://annexonbio.com/jobs/"
+  },
+  {
+    "name": "Caribou Biosciences",
+    "type": "greenhouse",
+    "token": "cariboubiosciencesinc",
+    "careers_url": "https://www.cariboubio.com/careers/jobs/"
+  },
+  {
+    "name": "Bolt Biotherapeutics",
+    "type": "lever",
+    "token": "boltbio",
+    "careers_url": "https://jobs.lever.co/boltbio"
+  },
+  {
+    "name": "BigHat Biosciences",
+    "type": "html",
+    "careers_url": "https://bighatbiosciences.pinpointhq.com/en/jobs"
+  },
+  {
+    "name": "Gordian Biotechnology",
+    "type": "html",
+    "careers_url": "https://ats.rippling.com/gordian-biotechnology/jobs"
+  },
+  {
+    "name": "Adicet Bio",
+    "type": "greenhouse",
+    "token": "adicettherapeuticsinc",
+    "careers_url": "https://www.adicetbio.com/careers/openings/"
+  },
+  {
+    "name": "Corcept Therapeutics",
+    "type": "greenhouse",
+    "token": "corcepttherapeutics",
+    "careers_url": "https://corcept.com/careers/current-opportunities/"
+  },
+  {
+    "name": "4D Molecular Therapeutics",
+    "type": "greenhouse",
+    "token": "4dmoleculartherapeutics",
+    "careers_url": "https://4dmoleculartherapeutics.com/careers/"
+  },
+  {
+    "name": "3T Biosciences",
+    "type": "html",
+    "careers_url": "https://3tbiosciences.com/careers/"
+  },
+  {
+    "name": "Nurix Therapeutics",
+    "type": "greenhouse",
+    "token": "nurix",
+    "careers_url": "https://job-boards.greenhouse.io/nurix"
+  },
+  {
+    "name": "Cytokinetics",
+    "type": "greenhouse",
+    "token": "cytokinetics",
+    "careers_url": "https://job-boards.greenhouse.io/cytokinetics"
+  },
+  {
+    "name": "Twist Bioscience",
+    "type": "greenhouse",
+    "token": "twistbioscience",
+    "careers_url": "https://job-boards.greenhouse.io/twistbioscience"
+  },
+  {
+    "name": "Relay Therapeutics",
+    "type": "greenhouse",
+    "token": "relaytherapeutics",
+    "careers_url": "https://job-boards.greenhouse.io/relaytherapeutics"
+  },
+  {
+    "name": "Revolution Medicines",
+    "type": "greenhouse",
+    "token": "revolutionmedicines",
+    "careers_url": "https://www.revmed.com/careers-list/"
+  },
+  {
+    "name": "Septerna",
+    "type": "greenhouse",
+    "token": "septerna",
+    "careers_url": "https://job-boards.greenhouse.io/septerna"
+  },
+  {
+    "name": "Protagonist Therapeutics",
+    "type": "greenhouse",
+    "token": "protagonist",
+    "careers_url": "https://www.protagonist.io/careers/"
+  },
+  {
+    "name": "Arsenal Biosciences",
+    "type": "lever",
+    "token": "arsenalbio",
+    "careers_url": "https://jobs.lever.co/arsenalbio"
+  }
+]
