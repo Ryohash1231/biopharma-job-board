@@ -1,0 +1,23 @@
+{
+  "scraped_at": "2026-06-09T13:00:00+00:00",
+  "jobs": [
+    {
+      "company": "Annexon Biosciences",
+      "title": "Research Associate, Protein Sciences",
+      "location": "San Francisco Bay Area",
+      "url": "https://job-boards.greenhouse.io/annexonbioscience/jobs/0000000001"
+    },
+    {
+      "company": "Caribou Biosciences",
+      "title": "Senior Research Associate, Cell Biology",
+      "location": "Berkeley, CA",
+      "url": "https://job-boards.greenhouse.io/cariboubiosciencesinc/jobs/0000000002"
+    },
+    {
+      "company": "BigHat Biosciences",
+      "title": "Scientist II, Cell Line Engineering",
+      "location": "San Mateo, CA",
+      "url": "https://bighatbiosciences.pinpointhq.com/en/jobs/527616"
+    }
+  ]
+}

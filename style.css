@@ -1,0 +1,42 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #222;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+#last-updated {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+}
+
+#search {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #666;
+}
