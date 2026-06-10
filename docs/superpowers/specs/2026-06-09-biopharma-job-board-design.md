@@ -89,6 +89,15 @@ relevant to biopharma job seekers, or sponsored/featured company placements.
   raising — failures are logged, not fatal.
 - Manual check of the frontend rendering against a sample `jobs.json`.
 
+## Deployment
+
+- Create a GitHub repository and push this local repo to it.
+- Enable GitHub Pages for the repo (serving the static frontend), giving a
+  public URL of the form `https://<username>.github.io/<repo>/`.
+- The GitHub Actions scraper workflow runs against this same repo, so
+  scheduled updates to `jobs.json` are reflected on the live site
+  automatically.
+
 ## Out of scope (v2+)
 
 - JS-rendered career pages requiring a headless browser (Playwright).
