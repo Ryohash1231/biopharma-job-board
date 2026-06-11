@@ -7,6 +7,20 @@ async function init() {
 
   const tbody = document.getElementById('jobs-body');
   const searchInput = document.getElementById('search');
+  const recencySelect = document.getElementById('recency');
+
+  const RECENCY_WINDOWS_MS = {
+    '24h': 24 * 60 * 60 * 1000,
+    '7d': 7 * 24 * 60 * 60 * 1000,
+    '30d': 30 * 24 * 60 * 60 * 1000,
+  };
+
+  function withinRecency(job, bucket) {
+    if (bucket === 'all') return true;
+    if (!job.date_posted) return false;
+    const postedTime = new Date(job.date_posted).getTime();
+    return Date.now() - postedTime <= RECENCY_WINDOWS_MS[bucket];
+  }
 
   function render(jobs) {
     tbody.innerHTML = '';
@@ -27,22 +41,30 @@ async function init() {
       const locationCell = document.createElement('td');
       locationCell.textContent = job.location;
 
-      row.append(titleCell, companyCell, locationCell);
+      const postedCell = document.createElement('td');
+      postedCell.textContent = job.date_posted
+        ? new Date(job.date_posted).toLocaleDateString()
+        : '—';
+
+      row.append(titleCell, companyCell, locationCell, postedCell);
       tbody.appendChild(row);
     }
   }
 
   function applyFilter() {
     const query = searchInput.value.toLowerCase();
+    const bucket = recencySelect.value;
     const filtered = data.jobs.filter(job =>
-      job.title.toLowerCase().includes(query) ||
+      (job.title.toLowerCase().includes(query) ||
       job.company.toLowerCase().includes(query) ||
-      job.location.toLowerCase().includes(query)
+      job.location.toLowerCase().includes(query)) &&
+      withinRecency(job, bucket)
     );
     render(filtered);
   }
 
   searchInput.addEventListener('input', applyFilter);
+  recencySelect.addEventListener('change', applyFilter);
   render(data.jobs);
 }
 
