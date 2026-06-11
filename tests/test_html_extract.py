@@ -52,11 +52,13 @@ def test_fetch_html_jobs(requests_mock):
             "title": "Scientist II, Cell Line Engineering",
             "location": "San Mateo, CA",
             "url": "https://example.com/en/jobs/527616",
+            "date_posted": None,
         },
         {
             "company": "BigHat Biosciences",
             "title": "Director/Senior Director, Antibody Discovery",
             "location": "San Mateo, CA",
             "url": "https://example.com/en/jobs/484931",
+            "date_posted": None,
         },
     ]

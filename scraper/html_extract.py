@@ -57,6 +57,7 @@ def fetch_html_jobs(company_name, careers_url, client=None):
             "title": job["title"],
             "location": job.get("location", ""),
             "url": job["url"],
+            "date_posted": None,
         }
         for job in jobs
     ]
