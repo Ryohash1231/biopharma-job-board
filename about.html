@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Bay Area Biopharma Jobs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="blog/index.html">Blog</a> |
+    <a href="about.html">About</a> |
+    <a href="privacy.html">Privacy</a>
+  </nav>
+  <article>
+    <h1>About This Site</h1>
+    <p>
+      Bay Area Biopharma Jobs aggregates open positions from Bay Area
+      biopharmaceutical companies' career pages into a single, searchable
+      page. Instead of checking a dozen different career sites, you can
+      search and filter listings from all tracked companies in one place.
+    </p>
+    <h2>How it works</h2>
+    <p>
+      Once a day, an automated job pulls the current openings directly from
+      each company's job board. Most companies publish their openings
+      through a structured job board API (Greenhouse or Lever), which this
+      site queries directly. For companies that don't expose a structured
+      API, an AI-assisted step reads the company's careers page and extracts
+      the current listings.
+    </p>
+    <p>
+      The result is written to a single data file that powers the search
+      table on the home page. Because this runs daily, listings here may lag
+      a company's own careers page by up to a day, and a listing that's been
+      filled or removed may briefly remain until the next refresh.
+    </p>
+    <h2>Which companies are tracked</h2>
+    <p>
+      The current list of tracked companies is maintained in this project's
+      source repository, in a file called
+      <code>companies.json</code>. New companies can be added there over
+      time.
+    </p>
+    <h2>Questions or feedback</h2>
+    <p>
+      This project is open source. If you notice a problem with a listing,
+      or have a suggestion, please open an issue on the
+      <a href="https://github.com/Ryohash1231/biopharma-job-board/issues">project's GitHub Issues page</a>.
+    </p>
+  </article>
+</body>
+</html>
