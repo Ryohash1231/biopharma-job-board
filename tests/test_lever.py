@@ -1,4 +1,5 @@
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 
 from scraper.lever import fetch_lever_jobs
@@ -22,12 +23,18 @@ def test_fetch_lever_jobs(requests_mock):
             "title": "Senior Scientist, Protein Engineering",
             "location": "Redwood City, CA",
             "url": "https://jobs.lever.co/boltbio/a1b2c3d4-0000-0000-0000-000000000001",
+            "date_posted": datetime.fromtimestamp(
+                FIXTURE[0]["createdAt"] / 1000, tz=timezone.utc
+            ).isoformat(),
         },
         {
             "company": "Bolt Biotherapeutics",
             "title": "Research Associate, Antibody Discovery",
             "location": "Redwood City, CA",
             "url": "https://jobs.lever.co/boltbio/a1b2c3d4-0000-0000-0000-000000000002",
+            "date_posted": datetime.fromtimestamp(
+                FIXTURE[1]["createdAt"] / 1000, tz=timezone.utc
+            ).isoformat(),
         },
     ]
 
