@@ -1,5 +1,6 @@
 import requests
 
+
 def fetch_greenhouse_jobs(company_name, token):
     url = f"https://boards-api.greenhouse.io/v1/boards/{token}/jobs"
     response = requests.get(url, timeout=10)

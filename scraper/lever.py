@@ -2,6 +2,7 @@ from datetime import datetime, timezone
 
 import requests
 
+
 def fetch_lever_jobs(company_name, token):
     url = f"https://api.lever.co/v0/postings/{token}?mode=json"
     response = requests.get(url, timeout=10)
