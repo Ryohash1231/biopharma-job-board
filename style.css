@@ -40,3 +40,52 @@ th {
   text-transform: uppercase;
   color: #666;
 }
+
+nav {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+article h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+article .post-date {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+article p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 1.25rem;
+}
+
+.post-list h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.post-excerpt {
+  color: #666;
+  margin: 0;
+}
