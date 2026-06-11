@@ -13,6 +13,7 @@ def fetch_greenhouse_jobs(company_name, token):
             "title": job["title"],
             "location": job["location"]["name"],
             "url": job["absolute_url"],
+            "date_posted": job["updated_at"],
         }
         for job in data.get("jobs", [])
     ]

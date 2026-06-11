@@ -22,11 +22,13 @@ def test_fetch_greenhouse_jobs(requests_mock):
             "title": "Associate Director, Clinical Trial Management",
             "location": "San Francisco Bay Area",
             "url": "https://job-boards.greenhouse.io/annexonbioscience/jobs/4699427005",
+            "date_posted": "2026-06-01T08:00:00-05:00",
         },
         {
             "company": "Annexon Biosciences",
             "title": "Director, Procurement Strategic Contract Negotiator",
             "location": "San Francisco Bay Area",
             "url": "https://job-boards.greenhouse.io/annexonbioscience/jobs/4684932005",
+            "date_posted": "2026-05-28T10:30:00-05:00",
         },
     ]

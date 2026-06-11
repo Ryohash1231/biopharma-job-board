@@ -3,12 +3,14 @@
     "id": "a1b2c3d4-0000-0000-0000-000000000001",
     "text": "Senior Scientist, Protein Engineering",
     "categories": {"location": "Redwood City, CA"},
-    "hostedUrl": "https://jobs.lever.co/boltbio/a1b2c3d4-0000-0000-0000-000000000001"
+    "hostedUrl": "https://jobs.lever.co/boltbio/a1b2c3d4-0000-0000-0000-000000000001",
+    "createdAt": 1748764800000
   },
   {
     "id": "a1b2c3d4-0000-0000-0000-000000000002",
     "text": "Research Associate, Antibody Discovery",
     "categories": {"location": "Redwood City, CA"},
-    "hostedUrl": "https://jobs.lever.co/boltbio/a1b2c3d4-0000-0000-0000-000000000002"
+    "hostedUrl": "https://jobs.lever.co/boltbio/a1b2c3d4-0000-0000-0000-000000000002",
+    "createdAt": 1746000000000
   }
 ]
