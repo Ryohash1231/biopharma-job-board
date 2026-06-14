@@ -1,9 +1,16 @@
+import json
+import logging
 import re
+import sys
+from pathlib import Path
 
 import requests
 
 from scraper.greenhouse import fetch_greenhouse_jobs
 from scraper.lever import fetch_lever_jobs
+
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+logger = logging.getLogger(__name__)
 
 GREENHOUSE_PATTERNS = [
     re.compile(r"(?:boards|job-boards)\.greenhouse\.io/([a-zA-Z0-9_-]+)"),
@@ -52,3 +59,38 @@ def classify_company(name, website_url, existing_tokens):
         return {"name": name, "reason": f"verification failed: {e}"}
 
     return {"name": name, "type": ats_type, "token": token, "careers_url": careers_url}
+
+
+def load_existing_tokens(companies_path):
+    companies = json.loads(Path(companies_path).read_text())
+    return {c["token"] for c in companies if "token" in c}
+
+
+def main(candidates_path, output_path="discovered_companies.json", companies_path="companies.json"):
+    existing_tokens = load_existing_tokens(companies_path)
+    candidates = json.loads(Path(candidates_path).read_text())
+
+    matches = []
+    skipped = []
+    for candidate in candidates:
+        try:
+            result = classify_company(candidate["name"], candidate["website"], existing_tokens)
+        except Exception as e:
+            result = {"name": candidate["name"], "reason": f"error: {e}"}
+
+        if "reason" in result:
+            skipped.append(result)
+        else:
+            matches.append(result)
+
+    output = {"matches": matches, "skipped": skipped}
+    Path(output_path).write_text(json.dumps(output, indent=2))
+    logger.info(
+        "Checked %d candidates: %d matches, %d skipped",
+        len(candidates), len(matches), len(skipped),
+    )
+
+
+if __name__ == "__main__":
+    output_arg = sys.argv[2] if len(sys.argv) > 2 else "discovered_companies.json"
+    main(sys.argv[1], output_arg)
