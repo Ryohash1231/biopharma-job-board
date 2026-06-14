@@ -52,3 +52,41 @@ def test_run_writes_jobs_and_skips_failures(tmp_path, monkeypatch):
             "url": "https://goodco.example/jobs/1",
         }
     ]
+
+
+def test_run_filters_out_jobs_outside_bay_area(tmp_path, monkeypatch):
+    companies = [
+        {
+            "name": "GoodCo",
+            "type": "greenhouse",
+            "token": "goodco",
+            "careers_url": "https://goodco.example/careers",
+        },
+    ]
+    companies_path = tmp_path / "companies.json"
+    companies_path.write_text(json.dumps(companies))
+    output_path = tmp_path / "jobs.json"
+
+    monkeypatch.setattr(
+        run_module,
+        "fetch_greenhouse_jobs",
+        lambda name, token: [
+            {
+                "company": name,
+                "title": "Research Associate",
+                "location": "South San Francisco, California, United States",
+                "url": "https://goodco.example/jobs/1",
+            },
+            {
+                "company": name,
+                "title": "Sales Director",
+                "location": "Boston, Massachusetts, United States",
+                "url": "https://goodco.example/jobs/2",
+            },
+        ],
+    )
+
+    run_module.run(companies_path=str(companies_path), output_path=str(output_path))
+
+    data = json.loads(output_path.read_text())
+    assert [job["title"] for job in data["jobs"]] == ["Research Associate"]
