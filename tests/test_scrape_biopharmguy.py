@@ -1,4 +1,7 @@
-from scraper.scrape_biopharmguy import parse_companies
+import json
+
+import scraper.scrape_biopharmguy as scrape_module
+from scraper.scrape_biopharmguy import main, parse_companies
 
 
 NORMAL_ROW = """
@@ -78,4 +81,29 @@ def test_parse_companies_handles_multiple_rows():
     assert result == [
         {"name": "10X Genomics", "website": "https://www.10xgenomics.com/"},
         {"name": "Selvita", "website": "https://selvita.com/"},
+    ]
+
+
+class FakeResponse:
+    def __init__(self, text):
+        self.text = text
+
+    def raise_for_status(self):
+        pass
+
+
+def test_main_writes_candidates_json(tmp_path, monkeypatch):
+    monkeypatch.setattr(
+        scrape_module.requests,
+        "get",
+        lambda url, timeout: FakeResponse(NORMAL_ROW),
+    )
+
+    output_path = tmp_path / "candidates.json"
+
+    main(output_path=str(output_path))
+
+    data = json.loads(output_path.read_text())
+    assert data == [
+        {"name": "10X Genomics", "website": "https://www.10xgenomics.com/"}
     ]
