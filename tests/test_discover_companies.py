@@ -1,6 +1,8 @@
 import pytest
+import requests
 
-from scraper.discover_companies import extract_ats_token
+import scraper.discover_companies as discover_module
+from scraper.discover_companies import classify_company, extract_ats_token
 
 
 @pytest.mark.parametrize(
@@ -35,3 +37,111 @@ from scraper.discover_companies import extract_ats_token
 )
 def test_extract_ats_token(html, expected):
     assert extract_ats_token(html) == expected
+
+
+class FakeResponse:
+    def __init__(self, text, status_code=200):
+        self.text = text
+        self.status_code = status_code
+
+    def raise_for_status(self):
+        if self.status_code >= 400:
+            raise requests.HTTPError(f"{self.status_code} error")
+
+
+def test_classify_company_greenhouse_match(monkeypatch):
+    monkeypatch.setattr(
+        discover_module.requests,
+        "get",
+        lambda url, timeout: FakeResponse(
+            '<a href="https://job-boards.greenhouse.io/examplebio">Careers</a>'
+        ),
+    )
+    monkeypatch.setattr(discover_module, "fetch_greenhouse_jobs", lambda name, token: [])
+
+    result = classify_company("Example Biosciences", "https://examplebio.com/careers", set())
+
+    assert result == {
+        "name": "Example Biosciences",
+        "type": "greenhouse",
+        "token": "examplebio",
+        "careers_url": "https://job-boards.greenhouse.io/examplebio",
+    }
+
+
+def test_classify_company_lever_match(monkeypatch):
+    monkeypatch.setattr(
+        discover_module.requests,
+        "get",
+        lambda url, timeout: FakeResponse(
+            '<a href="https://jobs.lever.co/examplebio">Careers</a>'
+        ),
+    )
+    monkeypatch.setattr(discover_module, "fetch_lever_jobs", lambda name, token: [])
+
+    result = classify_company("Example Biosciences", "https://examplebio.com/careers", set())
+
+    assert result == {
+        "name": "Example Biosciences",
+        "type": "lever",
+        "token": "examplebio",
+        "careers_url": "https://jobs.lever.co/examplebio",
+    }
+
+
+def test_classify_company_no_ats_link(monkeypatch):
+    monkeypatch.setattr(
+        discover_module.requests,
+        "get",
+        lambda url, timeout: FakeResponse("<html><body>No jobs here</body></html>"),
+    )
+
+    result = classify_company("OtherCo", "https://otherco.com/careers", set())
+
+    assert result == {"name": "OtherCo", "reason": "no greenhouse/lever link found"}
+
+
+def test_classify_company_duplicate_token(monkeypatch):
+    monkeypatch.setattr(
+        discover_module.requests,
+        "get",
+        lambda url, timeout: FakeResponse(
+            '<a href="https://job-boards.greenhouse.io/examplebio">Careers</a>'
+        ),
+    )
+
+    result = classify_company("DupeCo", "https://dupeco.com/careers", {"examplebio"})
+
+    assert result == {"name": "DupeCo", "reason": "duplicate token already in companies.json"}
+
+
+def test_classify_company_website_fetch_failure(monkeypatch):
+    def fake_get(url, timeout):
+        raise requests.ConnectionError("connection refused")
+
+    monkeypatch.setattr(discover_module.requests, "get", fake_get)
+
+    result = classify_company("BrokenCo", "https://brokenco.com/careers", set())
+
+    assert result["name"] == "BrokenCo"
+    assert result["reason"].startswith("failed to fetch website:")
+
+
+def test_classify_company_verification_failure(monkeypatch):
+    monkeypatch.setattr(
+        discover_module.requests,
+        "get",
+        lambda url, timeout: FakeResponse(
+            '<a href="https://job-boards.greenhouse.io/examplebio">Careers</a>'
+        ),
+    )
+
+    def fake_fetch(name, token):
+        raise requests.HTTPError("404 Client Error")
+
+    monkeypatch.setattr(discover_module, "fetch_greenhouse_jobs", fake_fetch)
+
+    result = classify_company("Example Biosciences", "https://examplebio.com/careers", set())
+
+    assert result["name"] == "Example Biosciences"
+    assert result["reason"].startswith("verification failed:")
