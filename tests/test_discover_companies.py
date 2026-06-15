@@ -246,3 +246,40 @@ def test_main_respects_limit(tmp_path, monkeypatch):
     assert data["skipped"] == [
         {"name": "OtherCo", "reason": "no greenhouse/lever link found"}
     ]
+
+
+def test_main_with_multiple_workers_preserves_order(tmp_path, monkeypatch):
+    companies_path = tmp_path / "companies.json"
+    companies_path.write_text(json.dumps([]))
+
+    candidates = [
+        {"name": f"Company{i}", "website": f"https://company{i}.example/careers"}
+        for i in range(5)
+    ]
+    candidates_path = tmp_path / "candidates.json"
+    candidates_path.write_text(json.dumps(candidates))
+
+    output_path = tmp_path / "discovered_companies.json"
+
+    def fake_get(url, timeout):
+        index = int(url.split("//company")[1].split(".")[0])
+        if index % 2 == 0:
+            return FakeResponse(
+                f'<a href="https://job-boards.greenhouse.io/company{index}">Careers</a>'
+            )
+        return FakeResponse("<html><body>No jobs here</body></html>")
+
+    monkeypatch.setattr(discover_module.requests, "get", fake_get)
+    monkeypatch.setattr(discover_module, "fetch_greenhouse_jobs", lambda name, token: [])
+
+    main(
+        candidates_path=str(candidates_path),
+        output_path=str(output_path),
+        companies_path=str(companies_path),
+        workers=4,
+    )
+
+    data = json.loads(output_path.read_text())
+
+    assert [m["name"] for m in data["matches"]] == ["Company0", "Company2", "Company4"]
+    assert [s["name"] for s in data["skipped"]] == ["Company1", "Company3"]
