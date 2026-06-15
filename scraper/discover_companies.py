@@ -35,7 +35,7 @@ def extract_ats_token(html):
 
 def classify_company(name, website_url, existing_tokens):
     try:
-        response = requests.get(website_url, timeout=10)
+        response = requests.get(website_url, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
         response.raise_for_status()
     except requests.RequestException as e:
         return {"name": name, "reason": f"failed to fetch website: {e}"}
