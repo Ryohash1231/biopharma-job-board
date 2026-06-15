@@ -1,7 +1,7 @@
+import argparse
 import json
 import logging
 import re
-import sys
 from pathlib import Path
 
 import requests
@@ -66,9 +66,12 @@ def load_existing_tokens(companies_path):
     return {c["token"] for c in companies if "token" in c}
 
 
-def main(candidates_path, output_path="discovered_companies.json", companies_path="companies.json"):
+def main(candidates_path, output_path="discovered_companies.json", companies_path="companies.json", limit=None):
     existing_tokens = load_existing_tokens(companies_path)
     candidates = json.loads(Path(candidates_path).read_text())
+
+    if limit is not None:
+        candidates = candidates[:limit]
 
     matches = []
     skipped = []
@@ -92,5 +95,10 @@ def main(candidates_path, output_path="discovered_companies.json", companies_pat
 
 
 if __name__ == "__main__":
-    output_arg = sys.argv[2] if len(sys.argv) > 2 else "discovered_companies.json"
-    main(sys.argv[1], output_arg)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("candidates_path")
+    parser.add_argument("output_path", nargs="?", default="discovered_companies.json")
+    parser.add_argument("--limit", type=int, default=None, help="only check the first N candidates")
+    args = parser.parse_args()
+
+    main(args.candidates_path, args.output_path, limit=args.limit)
