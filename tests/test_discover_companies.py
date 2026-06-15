@@ -54,7 +54,7 @@ def test_classify_company_greenhouse_match(monkeypatch):
     monkeypatch.setattr(
         discover_module.requests,
         "get",
-        lambda url, timeout: FakeResponse(
+        lambda url, timeout, headers=None: FakeResponse(
             '<a href="https://job-boards.greenhouse.io/examplebio">Careers</a>'
         ),
     )
@@ -74,7 +74,7 @@ def test_classify_company_lever_match(monkeypatch):
     monkeypatch.setattr(
         discover_module.requests,
         "get",
-        lambda url, timeout: FakeResponse(
+        lambda url, timeout, headers=None: FakeResponse(
             '<a href="https://jobs.lever.co/examplebio">Careers</a>'
         ),
     )
@@ -94,7 +94,7 @@ def test_classify_company_no_ats_link(monkeypatch):
     monkeypatch.setattr(
         discover_module.requests,
         "get",
-        lambda url, timeout: FakeResponse("<html><body>No jobs here</body></html>"),
+        lambda url, timeout, headers=None: FakeResponse("<html><body>No jobs here</body></html>"),
     )
 
     result = classify_company("OtherCo", "https://otherco.com/careers", set())
@@ -106,7 +106,7 @@ def test_classify_company_duplicate_token(monkeypatch):
     monkeypatch.setattr(
         discover_module.requests,
         "get",
-        lambda url, timeout: FakeResponse(
+        lambda url, timeout, headers=None: FakeResponse(
             '<a href="https://job-boards.greenhouse.io/examplebio">Careers</a>'
         ),
     )
@@ -116,8 +116,22 @@ def test_classify_company_duplicate_token(monkeypatch):
     assert result == {"name": "DupeCo", "reason": "duplicate token already in companies.json"}
 
 
+def test_classify_company_sends_user_agent_header(monkeypatch):
+    captured = {}
+
+    def fake_get(url, timeout, headers=None):
+        captured["headers"] = headers
+        return FakeResponse("<html><body>No jobs here</body></html>")
+
+    monkeypatch.setattr(discover_module.requests, "get", fake_get)
+
+    classify_company("OtherCo", "https://otherco.com/careers", set())
+
+    assert captured["headers"] == {"User-Agent": "Mozilla/5.0"}
+
+
 def test_classify_company_website_fetch_failure(monkeypatch):
-    def fake_get(url, timeout):
+    def fake_get(url, timeout, headers=None):
         raise requests.ConnectionError("connection refused")
 
     monkeypatch.setattr(discover_module.requests, "get", fake_get)
@@ -132,7 +146,7 @@ def test_classify_company_verification_failure(monkeypatch):
     monkeypatch.setattr(
         discover_module.requests,
         "get",
-        lambda url, timeout: FakeResponse(
+        lambda url, timeout, headers=None: FakeResponse(
             '<a href="https://job-boards.greenhouse.io/examplebio">Careers</a>'
         ),
     )
@@ -175,7 +189,7 @@ def test_main_writes_discovered_companies(tmp_path, monkeypatch):
     monkeypatch.setattr(
         discover_module.requests,
         "get",
-        lambda url, timeout: FakeResponse(responses[url]),
+        lambda url, timeout, headers=None: FakeResponse(responses[url]),
     )
     monkeypatch.setattr(discover_module, "fetch_greenhouse_jobs", lambda name, token: [])
 
@@ -222,7 +236,7 @@ def test_main_respects_limit(tmp_path, monkeypatch):
     monkeypatch.setattr(
         discover_module.requests,
         "get",
-        lambda url, timeout: FakeResponse(responses[url]),
+        lambda url, timeout, headers=None: FakeResponse(responses[url]),
     )
     monkeypatch.setattr(discover_module, "fetch_greenhouse_jobs", lambda name, token: [])
 
@@ -261,7 +275,7 @@ def test_main_with_multiple_workers_preserves_order(tmp_path, monkeypatch):
 
     output_path = tmp_path / "discovered_companies.json"
 
-    def fake_get(url, timeout):
+    def fake_get(url, timeout, headers=None):
         index = int(url.split("//company")[1].split(".")[0])
         if index % 2 == 0:
             return FakeResponse(
