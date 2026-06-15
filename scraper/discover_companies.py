@@ -2,6 +2,7 @@ import argparse
 import json
 import logging
 import re
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
@@ -66,7 +67,14 @@ def load_existing_tokens(companies_path):
     return {c["token"] for c in companies if "token" in c}
 
 
-def main(candidates_path, output_path="discovered_companies.json", companies_path="companies.json", limit=None):
+def _classify_candidate(candidate, existing_tokens):
+    try:
+        return classify_company(candidate["name"], candidate["website"], existing_tokens)
+    except Exception as e:
+        return {"name": candidate["name"], "reason": f"error: {e}"}
+
+
+def main(candidates_path, output_path="discovered_companies.json", companies_path="companies.json", limit=None, workers=10):
     existing_tokens = load_existing_tokens(companies_path)
     candidates = json.loads(Path(candidates_path).read_text())
 
@@ -75,16 +83,15 @@ def main(candidates_path, output_path="discovered_companies.json", companies_pat
 
     matches = []
     skipped = []
-    for candidate in candidates:
-        try:
-            result = classify_company(candidate["name"], candidate["website"], existing_tokens)
-        except Exception as e:
-            result = {"name": candidate["name"], "reason": f"error: {e}"}
-
-        if "reason" in result:
-            skipped.append(result)
-        else:
-            matches.append(result)
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        results = executor.map(
+            lambda candidate: _classify_candidate(candidate, existing_tokens), candidates
+        )
+        for result in results:
+            if "reason" in result:
+                skipped.append(result)
+            else:
+                matches.append(result)
 
     output = {"matches": matches, "skipped": skipped}
     Path(output_path).write_text(json.dumps(output, indent=2))
@@ -99,6 +106,7 @@ if __name__ == "__main__":
     parser.add_argument("candidates_path")
     parser.add_argument("output_path", nargs="?", default="discovered_companies.json")
     parser.add_argument("--limit", type=int, default=None, help="only check the first N candidates")
+    parser.add_argument("--workers", type=int, default=10, help="number of concurrent workers")
     args = parser.parse_args()
 
-    main(args.candidates_path, args.output_path, limit=args.limit)
+    main(args.candidates_path, args.output_path, limit=args.limit, workers=args.workers)
