@@ -34,6 +34,14 @@ from scraper.discover_companies import classify_company, extract_ats_token, main
             '<a href="https://job-boards.greenhouse.io/examplebio2">Careers</a>',
             ("greenhouse", "examplebio2"),
         ),
+        (
+            '<script src="https://boards.greenhouse.io/embed/job_board/js?for=examplebio"></script>',
+            ("greenhouse", "examplebio"),
+        ),
+        (
+            '<script>fetch("https://boards-api.greenhouse.io/v1/boards/examplebio/jobs?content=true")</script>',
+            ("greenhouse", "examplebio"),
+        ),
     ],
 )
 def test_extract_ats_token(html, expected):
@@ -127,7 +135,7 @@ def test_classify_company_sends_user_agent_header(monkeypatch):
 
     classify_company("OtherCo", "https://otherco.com/careers", set())
 
-    assert captured["headers"] == {"User-Agent": "Mozilla/5.0"}
+    assert "Chrome" in captured["headers"]["User-Agent"]
 
 
 def test_classify_company_website_fetch_failure(monkeypatch):

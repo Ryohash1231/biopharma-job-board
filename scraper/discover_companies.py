@@ -14,8 +14,10 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 
 GREENHOUSE_PATTERNS = [
-    re.compile(r"(?:boards|job-boards)\.greenhouse\.io/([a-zA-Z0-9_-]+)"),
+    re.compile(r"greenhouse\.io/embed/job_board/js\?for=([a-zA-Z0-9_-]+)"),
     re.compile(r"greenhouse\.io/embed/job_board\?for=([a-zA-Z0-9_-]+)"),
+    re.compile(r"boards-api\.greenhouse\.io/v1/boards/([a-zA-Z0-9_-]+)/jobs"),
+    re.compile(r"(?:boards|job-boards)\.greenhouse\.io/([a-zA-Z0-9_-]+)"),
 ]
 LEVER_PATTERN = re.compile(r"jobs\.lever\.co/([a-zA-Z0-9_-]+)")
 
@@ -35,7 +37,16 @@ def extract_ats_token(html):
 
 def classify_company(name, website_url, existing_tokens):
     try:
-        response = requests.get(website_url, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+        response = requests.get(
+            website_url,
+            timeout=10,
+            headers={
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                    "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+                )
+            },
+        )
         response.raise_for_status()
     except requests.RequestException as e:
         return {"name": name, "reason": f"failed to fetch website: {e}"}
