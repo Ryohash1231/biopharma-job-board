@@ -34,6 +34,22 @@ from scraper.discover_companies import classify_company, extract_ats_token, main
             '<a href="https://job-boards.greenhouse.io/examplebio2">Careers</a>',
             ("greenhouse", "examplebio2"),
         ),
+        (
+            '<script src="https://boards.greenhouse.io/embed/job_board/js?for=examplebio"></script>',
+            ("greenhouse", "examplebio"),
+        ),
+        (
+            '<script>fetch("https://boards-api.greenhouse.io/v1/boards/examplebio/jobs?content=true")</script>',
+            ("greenhouse", "examplebio"),
+        ),
+        (
+            '<a href="https://jobs.ashbyhq.com/examplebio">Careers</a>',
+            ("ashby", "examplebio"),
+        ),
+        (
+            '<script>var config = {"ashbyHref":"https://jobs.ashbyhq.com/examplebio/"};</script>',
+            ("ashby", "examplebio"),
+        ),
     ],
 )
 def test_extract_ats_token(html, expected):
@@ -99,7 +115,7 @@ def test_classify_company_no_ats_link(monkeypatch):
 
     result = classify_company("OtherCo", "https://otherco.com/careers", set())
 
-    assert result == {"name": "OtherCo", "reason": "no greenhouse/lever link found"}
+    assert result == {"name": "OtherCo", "reason": "no greenhouse/lever/ashby link found"}
 
 
 def test_classify_company_duplicate_token(monkeypatch):
@@ -127,7 +143,7 @@ def test_classify_company_sends_user_agent_header(monkeypatch):
 
     classify_company("OtherCo", "https://otherco.com/careers", set())
 
-    assert captured["headers"] == {"User-Agent": "Mozilla/5.0"}
+    assert "Chrome" in captured["headers"]["User-Agent"]
 
 
 def test_classify_company_website_fetch_failure(monkeypatch):
@@ -210,7 +226,7 @@ def test_main_writes_discovered_companies(tmp_path, monkeypatch):
         }
     ]
     assert data["skipped"] == [
-        {"name": "OtherCo", "reason": "no greenhouse/lever link found"}
+        {"name": "OtherCo", "reason": "no greenhouse/lever/ashby link found"}
     ]
 
 
@@ -258,7 +274,7 @@ def test_main_respects_limit(tmp_path, monkeypatch):
         }
     ]
     assert data["skipped"] == [
-        {"name": "OtherCo", "reason": "no greenhouse/lever link found"}
+        {"name": "OtherCo", "reason": "no greenhouse/lever/ashby link found"}
     ]
 
 
@@ -297,3 +313,23 @@ def test_main_with_multiple_workers_preserves_order(tmp_path, monkeypatch):
 
     assert [m["name"] for m in data["matches"]] == ["Company0", "Company2", "Company4"]
     assert [s["name"] for s in data["skipped"]] == ["Company1", "Company3"]
+
+
+def test_classify_company_ashby_match(monkeypatch):
+    monkeypatch.setattr(
+        discover_module.requests,
+        "get",
+        lambda url, timeout, headers=None: FakeResponse(
+            '<a href="https://jobs.ashbyhq.com/examplebio">Careers</a>'
+        ),
+    )
+    monkeypatch.setattr(discover_module, "fetch_ashby_jobs", lambda name, token: [])
+
+    result = classify_company("Example Biosciences", "https://examplebio.com/careers", set())
+
+    assert result == {
+        "name": "Example Biosciences",
+        "type": "ashby",
+        "token": "examplebio",
+        "careers_url": "https://jobs.ashbyhq.com/examplebio",
+    }
