@@ -9,7 +9,7 @@ FIXTURE = json.loads(
 
 
 def test_fetch_ashby_jobs(requests_mock):
-    requests_mock.get(
+    requests_mock.post(
         "https://api.ashbyhq.com/posting-api/job-board/examplebio",
         json=FIXTURE,
     )
@@ -35,7 +35,7 @@ def test_fetch_ashby_jobs(requests_mock):
 
 
 def test_fetch_ashby_jobs_empty(requests_mock):
-    requests_mock.get(
+    requests_mock.post(
         "https://api.ashbyhq.com/posting-api/job-board/examplebio",
         json={"jobs": [], "apiVersion": "1"},
     )
