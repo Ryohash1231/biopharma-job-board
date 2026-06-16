@@ -5,6 +5,7 @@ from pathlib import Path
 
 from scraper.greenhouse import fetch_greenhouse_jobs
 from scraper.lever import fetch_lever_jobs
+from scraper.ashby import fetch_ashby_jobs
 from scraper.html_extract import fetch_html_jobs
 from scraper.location_filter import is_bay_area_or_remote
 
@@ -18,6 +19,7 @@ def run(companies_path="companies.json", output_path="jobs.json"):
     fetchers = {
         "greenhouse": lambda c: fetch_greenhouse_jobs(c["name"], c["token"]),
         "lever": lambda c: fetch_lever_jobs(c["name"], c["token"]),
+        "ashby": lambda c: fetch_ashby_jobs(c["name"], c["token"]),
         "html": lambda c: fetch_html_jobs(c["name"], c["careers_url"]),
     }
 
