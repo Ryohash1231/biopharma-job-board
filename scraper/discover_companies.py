@@ -94,7 +94,17 @@ def _classify_candidate(candidate, existing_tokens):
         return {"name": candidate["name"], "reason": f"error: {e}"}
 
 
-def main(candidates_path, output_path="discovered_companies.json", companies_path="companies.json", limit=None, workers=10):
+def merge_into_companies(matches, companies_path):
+    companies = json.loads(Path(companies_path).read_text())
+    existing_tokens = {c["token"] for c in companies if "token" in c}
+    new_entries = [m for m in matches if m.get("token") not in existing_tokens]
+    companies = sorted(companies + new_entries, key=lambda c: c["name"].lower())
+    Path(companies_path).write_text(json.dumps(companies, indent=2))
+    logger.info("Added %d new companies to %s", len(new_entries), companies_path)
+    return len(new_entries)
+
+
+def main(candidates_path, output_path="discovered_companies.json", companies_path="companies.json", limit=None, workers=10, update_companies=False):
     existing_tokens = load_existing_tokens(companies_path)
     candidates = json.loads(Path(candidates_path).read_text())
 
@@ -120,6 +130,9 @@ def main(candidates_path, output_path="discovered_companies.json", companies_pat
         len(candidates), len(matches), len(skipped),
     )
 
+    if update_companies and matches:
+        merge_into_companies(matches, companies_path)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -127,6 +140,7 @@ if __name__ == "__main__":
     parser.add_argument("output_path", nargs="?", default="discovered_companies.json")
     parser.add_argument("--limit", type=int, default=None, help="only check the first N candidates")
     parser.add_argument("--workers", type=int, default=10, help="number of concurrent workers")
+    parser.add_argument("--update-companies", action="store_true", help="append matches to companies.json")
     args = parser.parse_args()
 
-    main(args.candidates_path, args.output_path, limit=args.limit, workers=args.workers)
+    main(args.candidates_path, args.output_path, limit=args.limit, workers=args.workers, update_companies=args.update_companies)

@@ -315,6 +315,58 @@ def test_main_with_multiple_workers_preserves_order(tmp_path, monkeypatch):
     assert [s["name"] for s in data["skipped"]] == ["Company1", "Company3"]
 
 
+def test_merge_into_companies_adds_and_sorts(tmp_path):
+    companies_path = tmp_path / "companies.json"
+    companies_path.write_text(json.dumps([
+        {"name": "Zymeworks", "type": "greenhouse", "token": "zymeworks", "careers_url": "https://job-boards.greenhouse.io/zymeworks"},
+        {"name": "Agenus", "type": "lever", "token": "agenus", "careers_url": "https://jobs.lever.co/agenus"},
+    ]))
+
+    matches = [
+        {"name": "Merus", "type": "greenhouse", "token": "merus", "careers_url": "https://job-boards.greenhouse.io/merus"},
+        {"name": "Agenus", "type": "lever", "token": "agenus", "careers_url": "https://jobs.lever.co/agenus"},  # duplicate
+    ]
+
+    discover_module.merge_into_companies(matches, str(companies_path))
+
+    result = json.loads(companies_path.read_text())
+    assert [c["name"] for c in result] == ["Agenus", "Merus", "Zymeworks"]
+
+
+def test_main_update_companies_flag(tmp_path, monkeypatch):
+    companies_path = tmp_path / "companies.json"
+    companies_path.write_text(json.dumps([
+        {"name": "Existing Co", "type": "greenhouse", "token": "existingco", "careers_url": "https://job-boards.greenhouse.io/existingco"},
+    ]))
+
+    candidates_path = tmp_path / "candidates.json"
+    candidates_path.write_text(json.dumps([
+        {"name": "Example Biosciences", "website": "https://examplebio.com/careers"},
+    ]))
+
+    output_path = tmp_path / "discovered_companies.json"
+
+    monkeypatch.setattr(
+        discover_module.requests,
+        "get",
+        lambda url, timeout, headers=None: FakeResponse(
+            '<a href="https://job-boards.greenhouse.io/examplebio">Careers</a>'
+        ),
+    )
+    monkeypatch.setattr(discover_module, "fetch_greenhouse_jobs", lambda name, token: [])
+
+    discover_module.main(
+        candidates_path=str(candidates_path),
+        output_path=str(output_path),
+        companies_path=str(companies_path),
+        update_companies=True,
+    )
+
+    result = json.loads(companies_path.read_text())
+    assert len(result) == 2
+    assert [c["name"] for c in result] == ["Example Biosciences", "Existing Co"]
+
+
 def test_classify_company_ashby_match(monkeypatch):
     monkeypatch.setattr(
         discover_module.requests,
