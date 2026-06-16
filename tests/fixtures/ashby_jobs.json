@@ -1,23 +1,20 @@
 {
-  "jobs": [
-    {
-      "id": "bd99fef5-c71a-4bab-979c-000000000001",
-      "title": "Research Scientist",
-      "location": "South San Francisco",
-      "publishedAt": "2026-05-15T10:00:00.000+00:00",
-      "isListed": true,
-      "jobUrl": "https://jobs.ashbyhq.com/examplebio/bd99fef5-c71a-4bab-979c-000000000001",
-      "applyUrl": "https://jobs.ashbyhq.com/examplebio/bd99fef5-c71a-4bab-979c-000000000001/application"
-    },
-    {
-      "id": "bd99fef5-c71a-4bab-979c-000000000002",
-      "title": "Senior Engineer, Platform",
-      "location": "Remote",
-      "publishedAt": "2026-05-20T14:30:00.000+00:00",
-      "isListed": true,
-      "jobUrl": "https://jobs.ashbyhq.com/examplebio/bd99fef5-c71a-4bab-979c-000000000002",
-      "applyUrl": "https://jobs.ashbyhq.com/examplebio/bd99fef5-c71a-4bab-979c-000000000002/application"
+  "data": {
+    "jobBoard": {
+      "jobPostings": [
+        {
+          "id": "bd99fef5-c71a-4bab-979c-000000000001",
+          "title": "Research Scientist",
+          "locationName": "South San Francisco",
+          "employmentType": "FullTime"
+        },
+        {
+          "id": "bd99fef5-c71a-4bab-979c-000000000002",
+          "title": "Senior Engineer, Platform",
+          "locationName": "Remote",
+          "employmentType": "FullTime"
+        }
+      ]
     }
-  ],
-  "apiVersion": "1"
+  }
 }
