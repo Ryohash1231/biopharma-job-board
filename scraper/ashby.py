@@ -11,9 +11,9 @@ def fetch_ashby_jobs(company_name, token):
         {
             "company": company_name,
             "title": job["title"],
-            "location": job["location"],
-            "url": job["jobUrl"],
-            "date_posted": job["publishedAt"],
+            "location": job.get("location", ""),
+            "url": job.get("jobUrl", ""),
+            "date_posted": job.get("publishedAt", ""),
         }
         for job in data.get("jobs", [])
     ]
