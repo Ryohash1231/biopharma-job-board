@@ -1,43 +1,8 @@
 [
   {
-    "name": "Annexon Biosciences",
-    "type": "greenhouse",
-    "token": "annexonbioscience",
-    "careers_url": "https://annexonbio.com/jobs/"
-  },
-  {
-    "name": "Caribou Biosciences",
-    "type": "greenhouse",
-    "token": "cariboubiosciencesinc",
-    "careers_url": "https://www.cariboubio.com/careers/jobs/"
-  },
-  {
-    "name": "Bolt Biotherapeutics",
-    "type": "lever",
-    "token": "boltbio",
-    "careers_url": "https://jobs.lever.co/boltbio"
-  },
-  {
-    "name": "BigHat Biosciences",
+    "name": "3T Biosciences",
     "type": "html",
-    "careers_url": "https://bighatbiosciences.pinpointhq.com/en/jobs"
-  },
-  {
-    "name": "Gordian Biotechnology",
-    "type": "html",
-    "careers_url": "https://ats.rippling.com/gordian-biotechnology/jobs"
-  },
-  {
-    "name": "Adicet Bio",
-    "type": "greenhouse",
-    "token": "adicettherapeuticsinc",
-    "careers_url": "https://www.adicetbio.com/careers/openings/"
-  },
-  {
-    "name": "Corcept Therapeutics",
-    "type": "greenhouse",
-    "token": "corcepttherapeutics",
-    "careers_url": "https://corcept.com/careers/current-opportunities/"
+    "careers_url": "https://3tbiosciences.com/careers/"
   },
   {
     "name": "4D Molecular Therapeutics",
@@ -46,15 +11,51 @@
     "careers_url": "https://4dmoleculartherapeutics.com/careers/"
   },
   {
-    "name": "3T Biosciences",
-    "type": "html",
-    "careers_url": "https://3tbiosciences.com/careers/"
+    "name": "Adicet Bio",
+    "type": "greenhouse",
+    "token": "adicettherapeuticsinc",
+    "careers_url": "https://www.adicetbio.com/careers/openings/"
   },
   {
-    "name": "Nurix Therapeutics",
+    "name": "Annexon Biosciences",
     "type": "greenhouse",
-    "token": "nurix",
-    "careers_url": "https://job-boards.greenhouse.io/nurix"
+    "token": "annexonbioscience",
+    "careers_url": "https://annexonbio.com/jobs/"
+  },
+  {
+    "name": "Antares Therapeutics",
+    "type": "greenhouse",
+    "token": "antaresrx",
+    "careers_url": "https://job-boards.greenhouse.io/antaresrx"
+  },
+  {
+    "name": "Arsenal Biosciences",
+    "type": "lever",
+    "token": "arsenalbio",
+    "careers_url": "https://jobs.lever.co/arsenalbio"
+  },
+  {
+    "name": "BigHat Biosciences",
+    "type": "html",
+    "careers_url": "https://bighatbiosciences.pinpointhq.com/en/jobs"
+  },
+  {
+    "name": "Bolt Biotherapeutics",
+    "type": "lever",
+    "token": "boltbio",
+    "careers_url": "https://jobs.lever.co/boltbio"
+  },
+  {
+    "name": "Caribou Biosciences",
+    "type": "greenhouse",
+    "token": "cariboubiosciencesinc",
+    "careers_url": "https://www.cariboubio.com/careers/jobs/"
+  },
+  {
+    "name": "Corcept Therapeutics",
+    "type": "greenhouse",
+    "token": "corcepttherapeutics",
+    "careers_url": "https://corcept.com/careers/current-opportunities/"
   },
   {
     "name": "Cytokinetics",
@@ -63,10 +64,63 @@
     "careers_url": "https://job-boards.greenhouse.io/cytokinetics"
   },
   {
-    "name": "Twist Bioscience",
+    "name": "Gordian Biotechnology",
+    "type": "html",
+    "careers_url": "https://ats.rippling.com/gordian-biotechnology/jobs"
+  },
+  {
+    "name": "Inceptive",
     "type": "greenhouse",
-    "token": "twistbioscience",
-    "careers_url": "https://job-boards.greenhouse.io/twistbioscience"
+    "token": "inceptive",
+    "careers_url": "https://job-boards.greenhouse.io/inceptive"
+  },
+  {
+    "name": "Lyterian Therapeutics",
+    "type": "lever",
+    "token": "lyterian",
+    "careers_url": "https://jobs.lever.co/lyterian"
+  },
+  {
+    "name": "Medeloop",
+    "type": "greenhouse",
+    "token": "medeloop",
+    "careers_url": "https://job-boards.greenhouse.io/medeloop"
+  },
+  {
+    "name": "Nkarta Therapeutics",
+    "type": "greenhouse",
+    "token": "nkartatherapeutics",
+    "careers_url": "https://job-boards.greenhouse.io/nkartatherapeutics"
+  },
+  {
+    "name": "Nurix Therapeutics",
+    "type": "greenhouse",
+    "token": "nurix",
+    "careers_url": "https://job-boards.greenhouse.io/nurix"
+  },
+  {
+    "name": "Profluent",
+    "type": "greenhouse",
+    "token": "profluent",
+    "careers_url": "https://job-boards.greenhouse.io/profluent"
+  },
+  {
+    "name": "Protagonist Therapeutics",
+    "type": "greenhouse",
+    "token": "protagonist",
+    "careers_url": "https://www.protagonist.io/careers/"
+  },
+  {
+    "name": "ProTrials Research",
+    "type": "lever",
+    "token": "protrials",
+    "careers_url": "https://jobs.lever.co/protrials"
+  },
+  {
+    "name": "Pulse Biosciences",
+    "type": "greenhouse",
+    "token": "pulsebiosciences",
+    "careers_url": "https://job-boards.greenhouse.io/pulsebiosciences"
   },
   {
     "name": "Relay Therapeutics",
@@ -81,21 +135,51 @@
     "careers_url": "https://www.revmed.com/careers-list/"
   },
   {
+    "name": "Rezo Therapeutics",
+    "type": "lever",
+    "token": "rezotx",
+    "careers_url": "https://jobs.lever.co/rezotx"
+  },
+  {
     "name": "Septerna",
     "type": "greenhouse",
     "token": "septerna",
     "careers_url": "https://job-boards.greenhouse.io/septerna"
   },
   {
-    "name": "Protagonist Therapeutics",
+    "name": "Shennon Biotechnologies",
     "type": "greenhouse",
-    "token": "protagonist",
-    "careers_url": "https://www.protagonist.io/careers/"
+    "token": "shennonbiotechnologies",
+    "careers_url": "https://job-boards.greenhouse.io/shennonbiotechnologies"
   },
   {
-    "name": "Arsenal Biosciences",
+    "name": "Subsense",
     "type": "lever",
-    "token": "arsenalbio",
-    "careers_url": "https://jobs.lever.co/arsenalbio"
+    "token": "subsense",
+    "careers_url": "https://jobs.lever.co/subsense"
+  },
+  {
+    "name": "Totus Medicines",
+    "type": "greenhouse",
+    "token": "totusmedicines",
+    "careers_url": "https://job-boards.greenhouse.io/totusmedicines"
+  },
+  {
+    "name": "Twist Bioscience",
+    "type": "greenhouse",
+    "token": "twistbioscience",
+    "careers_url": "https://job-boards.greenhouse.io/twistbioscience"
+  },
+  {
+    "name": "Until Labs",
+    "type": "lever",
+    "token": "until",
+    "careers_url": "https://jobs.lever.co/until"
+  },
+  {
+    "name": "ZAP Surgical",
+    "type": "lever",
+    "token": "zapsurgical",
+    "careers_url": "https://jobs.lever.co/zapsurgical"
   }
 ]
