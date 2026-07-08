@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-07T15:44:58.403831+00:00",
+  "scraped_at": "2026-07-08T15:25:10.813476+00:00",
   "jobs": [
     {
       "company": "4D Molecular Therapeutics",
@@ -227,13 +227,6 @@
     },
     {
       "company": "Corcept Therapeutics",
-      "title": "Director, Clinical Quality Assurance",
-      "location": "Redwood City, California, United States",
-      "url": "https://www.corcept.com/careers/current-opportunities/?gh_jid=5995887004",
-      "date_posted": "2026-05-13T19:03:10-04:00"
-    },
-    {
-      "company": "Corcept Therapeutics",
       "title": "Director, Product and Pipeline Communications (Endocrinology and Metabolic)",
       "location": "Redwood City, California, United States",
       "url": "https://www.corcept.com/careers/current-opportunities/?gh_jid=6019134004",
@@ -377,49 +370,49 @@
       "title": "Accelerating impact through partnerships",
       "location": "Palo Alto, CA",
       "url": "https://job-boards.greenhouse.io/inceptive/jobs/5155248007",
-      "date_posted": "2026-06-10T10:19:54-04:00"
+      "date_posted": "2026-07-08T01:00:16-04:00"
     },
     {
       "company": "Inceptive",
       "title": "Advancing Inceptive's commercial strategy",
       "location": "Palo Alto, CA",
       "url": "https://job-boards.greenhouse.io/inceptive/jobs/4934419007",
-      "date_posted": "2026-06-03T21:58:00-04:00"
+      "date_posted": "2026-07-08T01:00:15-04:00"
     },
     {
       "company": "Inceptive",
       "title": "Foundation and generative models for biomolecules",
       "location": "Berlin, Germany or Palo Alto, CA or Zurich, Switzerland",
       "url": "https://job-boards.greenhouse.io/inceptive/jobs/4961579007",
-      "date_posted": "2026-03-31T16:21:49-04:00"
+      "date_posted": "2026-07-08T01:00:16-04:00"
     },
     {
       "company": "Inceptive",
       "title": "High-throughput data generation to advance ML design",
       "location": "Palo Alto, CA",
       "url": "https://job-boards.greenhouse.io/inceptive/jobs/4951550007",
-      "date_posted": "2025-10-21T00:20:08-04:00"
+      "date_posted": "2026-07-08T01:00:15-04:00"
     },
     {
       "company": "Inceptive",
       "title": "Internship",
       "location": "Palo Alto, CA",
       "url": "https://job-boards.greenhouse.io/inceptive/jobs/5103191007",
-      "date_posted": "2026-05-05T20:23:58-04:00"
+      "date_posted": "2026-07-08T01:00:16-04:00"
     },
     {
       "company": "Inceptive",
       "title": "Leading Data-Driven Lab for AI Medicines",
       "location": "Palo Alto, CA",
       "url": "https://job-boards.greenhouse.io/inceptive/jobs/5060348007",
-      "date_posted": "2026-06-08T13:51:38-04:00"
+      "date_posted": "2026-07-08T01:00:16-04:00"
     },
     {
       "company": "Inceptive",
       "title": "Open Apply",
       "location": "Palo Alto, Berlin, or Zurich",
       "url": "https://job-boards.greenhouse.io/inceptive/jobs/4085997007",
-      "date_posted": "2025-05-16T14:12:57-04:00"
+      "date_posted": "2026-07-08T01:00:13-04:00"
     },
     {
       "company": "Medeloop",
@@ -675,6 +668,13 @@
     },
     {
       "company": "Pulse Biosciences",
+      "title": "Sr. Clinical Trial Manager (Cardiac Catheter Products)",
+      "location": "US Remote",
+      "url": "https://job-boards.greenhouse.io/pulsebiosciences/jobs/5290861008",
+      "date_posted": "2026-07-07T20:05:14-04:00"
+    },
+    {
+      "company": "Pulse Biosciences",
       "title": "Sr. Manufacturing Technician, NPI",
       "location": "Hayward, CA -  Onsite",
       "url": "https://job-boards.greenhouse.io/pulsebiosciences/jobs/5263663008",
@@ -818,14 +818,14 @@
       "title": "Associate Director, Compliance \u2013 Field Commercialization",
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7787516003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
+      "date_posted": "2026-07-07T22:17:57-04:00"
     },
     {
       "company": "Revolution Medicines",
       "title": "Associate Director, Externally Sponsored Research Contracts",
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7772061003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
+      "date_posted": "2026-07-07T22:18:19-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -846,7 +846,7 @@
       "title": "Associate Director, Global Pricing Strategy & Analytics",
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7714049003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
+      "date_posted": "2026-07-07T22:18:00-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -909,6 +909,13 @@
       "title": "Associate Director, Sales Operations & Analytics, Lung",
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7774138003",
+      "date_posted": "2026-07-07T22:18:21-04:00"
+    },
+    {
+      "company": "Revolution Medicines",
+      "title": "Associate Director, Statistical Programming",
+      "location": "Redwood City, California, United States",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7731510003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
@@ -916,13 +923,6 @@
       "title": "Associate Director, Statistical Programming",
       "location": "Redwood City, California, United States",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7731519003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
-    },
-    {
-      "company": "Revolution Medicines",
-      "title": "Associate Director, Statistical Programming",
-      "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7731510003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
@@ -1021,7 +1021,7 @@
       "title": "Director, Global Forecasting",
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7515208003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
+      "date_posted": "2026-07-07T22:17:51-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1049,7 +1049,7 @@
       "title": "Director, Global Pre-Approval Patient Access",
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7613323003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
+      "date_posted": "2026-07-07T22:18:06-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1503,14 +1503,14 @@
       "company": "Revolution Medicines",
       "title": "Scientist II, Drug Product",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7757565003",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7695483003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
       "company": "Revolution Medicines",
       "title": "Scientist II, Drug Product",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7695483003",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7757565003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
@@ -1552,14 +1552,14 @@
       "company": "Revolution Medicines",
       "title": "Senior Clinical Program Manager, Clinical Operations",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7741066003",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7741061003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
       "company": "Revolution Medicines",
       "title": "Senior Clinical Program Manager, Clinical Operations",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7741061003",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7741066003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
@@ -1578,24 +1578,17 @@
     },
     {
       "company": "Revolution Medicines",
-      "title": "Senior Data Engineer",
-      "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7775244003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
+      "title": "Senior Director, Access Strategy & Marketing",
+      "location": "Remote (United States)",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7778082003",
+      "date_posted": "2026-07-07T22:18:13-04:00"
     },
     {
       "company": "Revolution Medicines",
       "title": "Senior Director, Access Strategy & Marketing",
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7778084003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
-    },
-    {
-      "company": "Revolution Medicines",
-      "title": "Senior Director, Access Strategy & Marketing",
-      "location": "Remote (United States)",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7778082003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
+      "date_posted": "2026-07-07T22:18:13-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1679,7 +1672,7 @@
       "title": "Senior Director, Global Finance",
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7648495003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
+      "date_posted": "2026-07-07T22:17:55-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1708,6 +1701,13 @@
       "location": "Redwood City, California, United States",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7695578003",
       "date_posted": "2026-07-06T15:55:21-04:00"
+    },
+    {
+      "company": "Revolution Medicines",
+      "title": "Senior Director, HEOR/RWE - GI",
+      "location": "Remote (United States)",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7790799003",
+      "date_posted": "2026-07-07T22:18:23-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1763,27 +1763,13 @@
       "title": "Senior Manager, Commercial Regulatory Affairs",
       "location": "Redwood City, California, United States",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7695672003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
+      "date_posted": "2026-07-07T22:18:08-04:00"
     },
     {
       "company": "Revolution Medicines",
       "title": "Senior Manager, Compliance - Field Commercialization (West)",
       "location": "Redwood City, California, United States",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7648499003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
-    },
-    {
-      "company": "Revolution Medicines",
-      "title": "Senior Manager, Global Patient Safety Operations",
-      "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7715403003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
-    },
-    {
-      "company": "Revolution Medicines",
-      "title": "Senior Manager, Global Patient Safety Operations",
-      "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7715401003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
@@ -1798,6 +1784,20 @@
       "title": "Senior Manager, Global Patient Safety Operations",
       "location": "Redwood City, California, United States",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7765268003",
+      "date_posted": "2026-07-06T15:55:21-04:00"
+    },
+    {
+      "company": "Revolution Medicines",
+      "title": "Senior Manager, Global Patient Safety Operations",
+      "location": "Redwood City, California, United States",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7715403003",
+      "date_posted": "2026-07-06T15:55:21-04:00"
+    },
+    {
+      "company": "Revolution Medicines",
+      "title": "Senior Manager, Global Patient Safety Operations",
+      "location": "Redwood City, California, United States",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7715401003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
@@ -1833,7 +1833,7 @@
       "title": "Senior Manager, Marketing, Lung",
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7767420003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
+      "date_posted": "2026-07-07T22:18:19-04:00"
     },
     {
       "company": "Revolution Medicines",
