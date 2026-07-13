@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-12T14:27:26.345071+00:00",
+  "scraped_at": "2026-07-13T15:43:44.585628+00:00",
   "jobs": [
     {
       "company": "4D Molecular Therapeutics",
@@ -7,6 +7,13 @@
       "location": "Emeryville, California",
       "url": "https://4dmoleculartherapeutics.com/careers/?gh_jid=4711833005",
       "date_posted": "2026-07-02T17:29:45-04:00"
+    },
+    {
+      "company": "4D Molecular Therapeutics",
+      "title": "Associate Director, Clinical Operations (Retina Program)",
+      "location": "Remote, United States",
+      "url": "https://4dmoleculartherapeutics.com/careers/?gh_jid=4714086005",
+      "date_posted": "2026-07-12T23:07:55-04:00"
     },
     {
       "company": "4D Molecular Therapeutics",
@@ -1559,14 +1566,14 @@
       "company": "Revolution Medicines",
       "title": "Scientist II, Drug Product",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7695483003",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7757565003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
       "company": "Revolution Medicines",
       "title": "Scientist II, Drug Product",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7757565003",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7695483003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
@@ -1622,14 +1629,14 @@
       "company": "Revolution Medicines",
       "title": "Senior Director, Access Strategy & Marketing",
       "location": "Remote (United States)",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7778084003",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7778082003",
       "date_posted": "2026-07-07T22:18:13-04:00"
     },
     {
       "company": "Revolution Medicines",
       "title": "Senior Director, Access Strategy & Marketing",
       "location": "Remote (United States)",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7778082003",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7778084003",
       "date_posted": "2026-07-07T22:18:13-04:00"
     },
     {
@@ -1839,21 +1846,7 @@
       "company": "Revolution Medicines",
       "title": "Senior Manager, Global Patient Safety Operations",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7715401003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
-    },
-    {
-      "company": "Revolution Medicines",
-      "title": "Senior Manager, Global Patient Safety Operations",
-      "location": "Redwood City, California, United States",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7765268003",
-      "date_posted": "2026-07-06T15:55:21-04:00"
-    },
-    {
-      "company": "Revolution Medicines",
-      "title": "Senior Manager, Global Patient Safety Operations",
-      "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7715403003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
@@ -1865,9 +1858,16 @@
     },
     {
       "company": "Revolution Medicines",
-      "title": "Senior Manager, GMP Quality",
+      "title": "Senior Manager, Global Patient Safety Operations",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7762852003",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7715401003",
+      "date_posted": "2026-07-06T15:55:21-04:00"
+    },
+    {
+      "company": "Revolution Medicines",
+      "title": "Senior Manager, Global Patient Safety Operations",
+      "location": "Redwood City, California, United States",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7715403003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
@@ -1882,6 +1882,13 @@
       "title": "Senior Manager, GMP Quality",
       "location": "Redwood City, California, United States",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7762854003",
+      "date_posted": "2026-07-06T15:55:21-04:00"
+    },
+    {
+      "company": "Revolution Medicines",
+      "title": "Senior Manager, GMP Quality",
+      "location": "Redwood City, California, United States",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7762852003",
       "date_posted": "2026-07-06T15:55:21-04:00"
     },
     {
