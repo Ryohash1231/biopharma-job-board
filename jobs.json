@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-27T17:36:51.892509+00:00",
+  "scraped_at": "2026-09-28T20:03:14.836110+00:00",
   "jobs": [
     {
       "company": "4D Molecular Therapeutics",
@@ -161,6 +161,13 @@
       "location": "San Francisco Bay Area",
       "url": "https://job-boards.greenhouse.io/annexonbioscience/jobs/4685050005",
       "date_posted": "2026-04-15T17:19:26-04:00"
+    },
+    {
+      "company": "Antares Therapeutics",
+      "title": "Scientist II/Sr. Scientist I, Immunology ",
+      "location": "San Francisco, CA",
+      "url": "https://job-boards.greenhouse.io/antaresrx/jobs/6209875004",
+      "date_posted": "2026-09-28T14:11:49-04:00"
     },
     {
       "company": "Arsenal Biosciences",
@@ -398,7 +405,7 @@
       "title": "Senior Manager, Pipeline & Portfolio Market Planning",
       "location": "Redwood City, California, United States",
       "url": "https://www.corcept.com/careers/current-opportunities/?gh_jid=5982908004",
-      "date_posted": "2026-09-24T13:00:41-04:00"
+      "date_posted": "2026-09-28T13:26:20-04:00"
     },
     {
       "company": "Corcept Therapeutics",
@@ -546,300 +553,6 @@
       "location": "South San Francisco",
       "url": "https://job-boards.greenhouse.io/nkartatherapeutics/jobs/5427376008",
       "date_posted": "2026-09-17T13:47:16-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Associate Director, Chemical Development",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8779770002",
-      "date_posted": "2026-09-16T19:02:02-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Associate Director, Chemical Engineering",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8784987002",
-      "date_posted": "2026-09-06T22:04:46-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Associate Director, Computer Systems Assurance (Quality)",
-      "location": "Brisbane, CA",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8535914002",
-      "date_posted": "2026-08-26T17:22:24-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Associate Director, Pharmacovigilance Operations",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8823743002",
-      "date_posted": "2026-09-18T19:59:57-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Clinical Trial Associate (CTA) NX-5948-203",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8843137002",
-      "date_posted": "2026-09-24T16:02:34-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Director, IT Infrastructure & Operations",
-      "location": "Brisbane, CA",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8635539002",
-      "date_posted": "2026-08-13T01:01:09-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Director, Nonclinical Toxicology Operations",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8785509002",
-      "date_posted": "2026-09-08T13:53:28-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Director, Pharmaceutical Development",
-      "location": "Brisbane, CA",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8629094002",
-      "date_posted": "2026-08-13T01:01:09-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Director, Regulatory Affairs (Strategy, I&I)",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8535319002",
-      "date_posted": "2026-09-14T13:52:18-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Director / Sr. Director, Regulatory Affairs (Strategy, Oncology Solid Tumors) ",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8670799002",
-      "date_posted": "2026-08-13T01:01:09-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Director, Total Rewards",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8826633002",
-      "date_posted": "2026-09-20T20:03:55-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Executive Assistant to the CHRO - Contract to Perm",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8739857002",
-      "date_posted": "2026-08-22T14:48:56-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Executive Business Partner",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8834076002",
-      "date_posted": "2026-09-23T16:26:53-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Medical Director / Senior Medical Director   ",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8782284002",
-      "date_posted": "2026-09-03T17:36:21-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Medical Director / Senior Medical Director   ",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8782279002",
-      "date_posted": "2026-09-03T17:24:27-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Medical Director / Senior Medical Director   5948-306",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8780203002",
-      "date_posted": "2026-09-03T17:23:44-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Program Manager, Preclinical & Early Development  ",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8710974002",
-      "date_posted": "2026-09-06T23:43:22-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Recruiting Coordinator  (Contract)",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8843525002",
-      "date_posted": "2026-09-24T18:12:54-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Research Associate II, Bioanalytical/In Vitro ADME/DMPK",
-      "location": "Brisbane, CA ",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8582171002",
-      "date_posted": "2026-09-06T18:59:56-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Research Associate I, Pharmaceutical Development  ~ Contract ",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8823355002",
-      "date_posted": "2026-09-18T19:03:18-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Scientist I, Bioanalytical \u2013 Drug Antibody Conjugates (DACs)",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8684692002",
-      "date_posted": "2026-09-06T22:19:26-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Scientist II, Degrader Antibody Conjugate Characterization",
-      "location": "Brisbane, CA",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8689218002",
-      "date_posted": "2026-09-06T22:25:49-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Analyst, FP&A",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8780786002",
-      "date_posted": "2026-09-03T17:40:02-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Clinical Trial Associate (Sr. CTA) NX-1607",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8842987002",
-      "date_posted": "2026-09-24T16:10:00-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Clinical Trial Manager (Sr. CTM) 5948-204",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8843030002",
-      "date_posted": "2026-09-24T16:38:51-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Clinical Trial Manager (Sr. CTM) NX-5948-201",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8843086002",
-      "date_posted": "2026-09-24T16:34:44-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Clinical Trial Manager (Sr. CTM) NX-5948-203",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8843108002",
-      "date_posted": "2026-09-24T16:36:28-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Director, Quality Control",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8784989002",
-      "date_posted": "2026-09-09T19:04:07-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Director, Translational Medicine and Clinical Biomarkers",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8826666002",
-      "date_posted": "2026-09-20T23:33:47-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Manager/Associate Director, Regulatory Affairs (Strategy, Hematology Oncology) ",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8785500002",
-      "date_posted": "2026-09-07T17:41:21-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Manager, electronic Quality Management System (eQMS)",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8788376002",
-      "date_posted": "2026-09-14T17:45:39-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Manager, External Quality-Supply Chain",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8715992002",
-      "date_posted": "2026-08-20T18:24:53-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Research Associate, DNA Encoded Library Technology ~ Contract",
-      "location": "Brisbane, CA ",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8553710002",
-      "date_posted": "2026-08-24T15:51:52-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Research Associate - Scientist I, Discovery Biology - Contract",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8843425002",
-      "date_posted": "2026-09-25T18:47:18-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Scientist, Analytical Development and Quality Control - Drug Product",
-      "location": "Brisbane, CA ",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8546901002",
-      "date_posted": "2026-09-06T21:49:20-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Scientist, Analytical Development and Quality Control - Early Phase",
-      "location": "Brisbane, CA ",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8735352002",
-      "date_posted": "2026-09-08T14:06:37-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Scientist, Antibody Conjugation",
-      "location": "Brisbane, CA",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8635664002",
-      "date_posted": "2026-09-06T23:27:56-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Senior Scientist, Degrader Antibody Conjugate Cellular Pharmacology",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8654276002",
-      "date_posted": "2026-09-06T23:25:44-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Sr. Manager / Associate Director, Publications and Medical Information (Contract)",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8821613002",
-      "date_posted": "2026-09-18T15:20:16-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Talent Acquisition Analyst - Contract",
-      "location": "Brisbane, California",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8843533002",
-      "date_posted": "2026-09-24T18:16:57-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Vice President, Medical Affairs \u2013 Hematology-Oncology",
-      "location": "Brisbane, CA ",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8582375002",
-      "date_posted": "2026-08-13T01:01:09-04:00"
-    },
-    {
-      "company": "Nurix Therapeutics",
-      "title": "Vice President / Senior Vice President, Global Development Leader",
-      "location": "Brisbane, California, United States",
-      "url": "https://job-boards.greenhouse.io/nurix/jobs/8756817002",
-      "date_posted": "2026-09-07T19:35:59-04:00"
     },
     {
       "company": "Profluent",
@@ -1263,6 +976,13 @@
     },
     {
       "company": "Revolution Medicines",
+      "title": "Clinical Trials Manager",
+      "location": "Redwood City, California, United States",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=8005896003",
+      "date_posted": "2026-09-28T15:05:15-04:00"
+    },
+    {
+      "company": "Revolution Medicines",
       "title": "Computational Clinical Scientist II, Clinical Bioinformatics",
       "location": "Redwood City, California, United States",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7837680003",
@@ -1399,14 +1119,14 @@
       "title": "Director, Global Medical Content and Training",
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7999387003",
-      "date_posted": "2026-09-18T14:14:30-04:00"
+      "date_posted": "2026-09-28T14:49:14-04:00"
     },
     {
       "company": "Revolution Medicines",
-      "title": "Director, Global Medical Excellence",
+      "title": "Director, Global MSL Excellence",
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7999443003",
-      "date_posted": "2026-09-18T19:15:33-04:00"
+      "date_posted": "2026-09-28T13:47:36-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1533,13 +1253,6 @@
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7860235003",
       "date_posted": "2026-09-21T14:33:00-04:00"
-    },
-    {
-      "company": "Revolution Medicines",
-      "title": "Director, Pipeline & Product Communications",
-      "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7790257003",
-      "date_posted": "2026-09-21T14:02:32-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1712,13 +1425,6 @@
     {
       "company": "Revolution Medicines",
       "title": "Machine Learning Scientist II",
-      "location": "Remote (United States)",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7996693003",
-      "date_posted": "2026-09-25T12:26:12-04:00"
-    },
-    {
-      "company": "Revolution Medicines",
-      "title": "Machine Learning Scientist II",
       "location": "Redwood City, California, United States",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7999589003",
       "date_posted": "2026-09-25T12:25:25-04:00"
@@ -1832,15 +1538,15 @@
       "company": "Revolution Medicines",
       "title": "Principal Statistical Analyst",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7823333003",
-      "date_posted": "2026-09-17T13:12:14-04:00"
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7736313003",
+      "date_posted": "2026-09-17T13:07:08-04:00"
     },
     {
       "company": "Revolution Medicines",
       "title": "Principal Statistical Analyst",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7736313003",
-      "date_posted": "2026-09-17T13:07:08-04:00"
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7823333003",
+      "date_posted": "2026-09-17T13:12:14-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1916,15 +1622,15 @@
       "company": "Revolution Medicines",
       "title": "Senior Clinical Program Manager",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7695777003",
-      "date_posted": "2026-09-17T13:03:46-04:00"
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7894231003",
+      "date_posted": "2026-09-17T13:11:58-04:00"
     },
     {
       "company": "Revolution Medicines",
       "title": "Senior Clinical Program Manager",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7894231003",
-      "date_posted": "2026-09-17T13:11:58-04:00"
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7695777003",
+      "date_posted": "2026-09-17T13:03:46-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1937,8 +1643,8 @@
       "company": "Revolution Medicines",
       "title": "Senior Director, Clinical Development",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7721222003",
-      "date_posted": "2026-09-17T13:06:50-04:00"
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7849986003",
+      "date_posted": "2026-09-17T13:12:34-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1951,8 +1657,8 @@
       "company": "Revolution Medicines",
       "title": "Senior Director, Clinical Development",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7849986003",
-      "date_posted": "2026-09-17T13:12:34-04:00"
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7721222003",
+      "date_posted": "2026-09-17T13:06:50-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -2075,10 +1781,10 @@
     },
     {
       "company": "Revolution Medicines",
-      "title": "Senior Machine Learning Scientist II, Drug Discovery Analytics",
+      "title": "Senior Machine Learning Scientist I, Drug Discovery Analytics",
       "location": "Redwood City, California, United States",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7677975003",
-      "date_posted": "2026-09-25T12:28:10-04:00"
+      "date_posted": "2026-09-28T13:48:52-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -2446,6 +2152,13 @@
     },
     {
       "company": "Twist Bioscience",
+      "title": "Content Lead",
+      "location": "USA - Remote",
+      "url": "https://job-boards.greenhouse.io/twistbioscience/jobs/8223640",
+      "date_posted": "2026-09-28T12:05:22-04:00"
+    },
+    {
+      "company": "Twist Bioscience",
       "title": "General Job Application",
       "location": "USA - South San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/twistbioscience/jobs/487462",
@@ -2462,15 +2175,15 @@
       "company": "Twist Bioscience",
       "title": "Manufacturing Associate, NGS TE Production",
       "location": "USA - South San Francisco, CA",
-      "url": "https://job-boards.greenhouse.io/twistbioscience/jobs/8075662",
-      "date_posted": "2026-08-24T18:02:29-04:00"
+      "url": "https://job-boards.greenhouse.io/twistbioscience/jobs/8164893",
+      "date_posted": "2026-09-05T20:31:30-04:00"
     },
     {
       "company": "Twist Bioscience",
       "title": "Manufacturing Associate, NGS TE Production",
       "location": "USA - South San Francisco, CA",
-      "url": "https://job-boards.greenhouse.io/twistbioscience/jobs/8164893",
-      "date_posted": "2026-09-05T20:31:30-04:00"
+      "url": "https://job-boards.greenhouse.io/twistbioscience/jobs/8075662",
+      "date_posted": "2026-08-24T18:02:29-04:00"
     },
     {
       "company": "Twist Bioscience",
@@ -2691,7 +2404,7 @@
     },
     {
       "company": "Until Labs",
-      "title": "Strategic Finance Lead",
+      "title": "Strategic Finance Manager",
       "location": "Bay Area",
       "url": "https://jobs.lever.co/until/5c5962bb-6a34-4b76-a44f-4e0d9a09824a",
       "date_posted": "2026-09-23T21:30:54.991000+00:00"
