@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-25T16:59:46.060603+00:00",
+  "scraped_at": "2026-10-26T19:05:27.823335+00:00",
   "jobs": [
     {
       "company": "4D Molecular Therapeutics",
@@ -850,20 +850,6 @@
     },
     {
       "company": "Profluent",
-      "title": "Scientist II - Sr. Scientist, CRISPR Specificity & Genomic Safety",
-      "location": "Emeryville, California, United States; On-site",
-      "url": "https://job-boards.greenhouse.io/profluent/jobs/5239820008",
-      "date_posted": "2026-09-10T19:15:28-04:00"
-    },
-    {
-      "company": "Profluent",
-      "title": "Scientist I/Scientist II, tLNP Formulation and Delivery",
-      "location": "Emeryville, California, United States",
-      "url": "https://job-boards.greenhouse.io/profluent/jobs/5421400008",
-      "date_posted": "2026-09-10T18:19:23-04:00"
-    },
-    {
-      "company": "Profluent",
       "title": "Senior IT Operations Engineer",
       "location": "Emeryville, California, United States; Hybrid (2-3 days on-site)",
       "url": "https://job-boards.greenhouse.io/profluent/jobs/5427027008",
@@ -937,13 +923,6 @@
       "title": "Sr. Bioengineer, Preclinical Development (In Vivo)",
       "location": "Hayward, CA -  Onsite",
       "url": "https://job-boards.greenhouse.io/pulsebiosciences/jobs/5370273008",
-      "date_posted": "2026-10-20T14:20:59-04:00"
-    },
-    {
-      "company": "Pulse Biosciences",
-      "title": "Sr. Clinical Research Associate (Cardiac Catheter Products)",
-      "location": "US Remote",
-      "url": "https://job-boards.greenhouse.io/pulsebiosciences/jobs/5419861008",
       "date_posted": "2026-10-20T14:20:59-04:00"
     },
     {
@@ -1137,10 +1116,24 @@
     },
     {
       "company": "Revolution Medicines",
+      "title": "Associate Director, Marketing",
+      "location": "Redwood City, California, United States",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=8044787003",
+      "date_posted": "2026-10-26T14:14:39-04:00"
+    },
+    {
+      "company": "Revolution Medicines",
       "title": "Associate Director, Marketing, Austria",
       "location": "Remote (Vienna, Austria)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=8013446003",
       "date_posted": "2026-10-05T20:45:15-04:00"
+    },
+    {
+      "company": "Revolution Medicines",
+      "title": "Associate Director, Marketing, Lung Patient",
+      "location": "Remote (United States)",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=8043447003",
+      "date_posted": "2026-10-26T13:08:10-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1160,15 +1153,15 @@
       "company": "Revolution Medicines",
       "title": "Associate Director, Portfolio Management",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7825024003",
-      "date_posted": "2026-10-23T18:32:40-04:00"
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7980637003",
+      "date_posted": "2026-09-28T18:32:09-04:00"
     },
     {
       "company": "Revolution Medicines",
       "title": "Associate Director, Portfolio Management",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7980637003",
-      "date_posted": "2026-09-28T18:32:09-04:00"
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7825024003",
+      "date_posted": "2026-10-23T18:32:40-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1237,15 +1230,15 @@
       "company": "Revolution Medicines",
       "title": "Clinical Program Manager",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7985665003",
-      "date_posted": "2026-09-17T13:12:00-04:00"
+      "url": "https://www.revmed.com/careers-list/?gh_jid=8016258003",
+      "date_posted": "2026-10-07T19:31:59-04:00"
     },
     {
       "company": "Revolution Medicines",
       "title": "Clinical Program Manager",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=8016258003",
-      "date_posted": "2026-10-07T19:31:59-04:00"
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7985665003",
+      "date_posted": "2026-09-17T13:12:00-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1265,15 +1258,15 @@
       "company": "Revolution Medicines",
       "title": "Contract Administrator",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=8003055003",
-      "date_posted": "2026-10-08T21:47:24-04:00"
+      "url": "https://www.revmed.com/careers-list/?gh_jid=8003595003",
+      "date_posted": "2026-10-23T13:57:43-04:00"
     },
     {
       "company": "Revolution Medicines",
       "title": "Contract Administrator",
       "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=8003595003",
-      "date_posted": "2026-10-23T13:57:43-04:00"
+      "url": "https://www.revmed.com/careers-list/?gh_jid=8003055003",
+      "date_posted": "2026-10-08T21:47:24-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -1867,6 +1860,13 @@
       "company": "Revolution Medicines",
       "title": "Senior Director, Clinical Development",
       "location": "Redwood City, California, United States",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=7933362003",
+      "date_posted": "2026-09-17T13:12:35-04:00"
+    },
+    {
+      "company": "Revolution Medicines",
+      "title": "Senior Director, Clinical Development",
+      "location": "Redwood City, California, United States",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7849986003",
       "date_posted": "2026-09-17T13:12:34-04:00"
     },
@@ -1876,13 +1876,6 @@
       "location": "Redwood City, California, United States",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7721222003",
       "date_posted": "2026-09-17T13:06:50-04:00"
-    },
-    {
-      "company": "Revolution Medicines",
-      "title": "Senior Director, Clinical Development",
-      "location": "Redwood City, California, United States",
-      "url": "https://www.revmed.com/careers-list/?gh_jid=7933362003",
-      "date_posted": "2026-09-17T13:12:35-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -2044,6 +2037,13 @@
       "location": "Remote (United States)",
       "url": "https://www.revmed.com/careers-list/?gh_jid=7832486003",
       "date_posted": "2026-09-17T13:10:23-04:00"
+    },
+    {
+      "company": "Revolution Medicines",
+      "title": "Senior Manager, Marketing, Lung Cancer",
+      "location": "Remote (United States)",
+      "url": "https://www.revmed.com/careers-list/?gh_jid=8044747003",
+      "date_posted": "2026-10-26T13:16:09-04:00"
     },
     {
       "company": "Revolution Medicines",
@@ -3017,97 +3017,6 @@
       "location": "USA - Carlsbad, CA; USA - South San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/twistbioscience/jobs/6236520",
       "date_posted": "2026-09-29T01:03:45-04:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Electrical Engineer / Applied Physicist",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/b75143f0-9da0-4b95-b4ca-68b098afe17b",
-      "date_posted": "2026-09-02T00:41:28.780000+00:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Engineer, Rewarming Systems",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/e6a9408c-00ef-4382-8d22-44ff7d8d90bd",
-      "date_posted": "2026-10-22T00:13:52.461000+00:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Head of Legal",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/9f6a6c45-c8ec-495c-9c3f-6335be87aeff",
-      "date_posted": "2026-01-26T14:08:50.246000+00:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Lab Technician",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/5f5e1673-87ee-44c0-88d7-7b54ada97444",
-      "date_posted": "2026-09-21T16:37:52.205000+00:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Research Associate (Organ Perfusion)",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/805c4469-eef4-4008-8911-3c04db9576f1",
-      "date_posted": "2026-05-19T21:10:19.142000+00:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Research Associate, Hibernation",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/c2285a63-8609-49f4-978c-98a27e0c8e5c",
-      "date_posted": "2025-09-23T00:44:21.680000+00:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Scientist (Organ Perfusion)",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/2784d9e2-5d0a-4a97-bd65-a1b014c646ec",
-      "date_posted": "2025-07-30T05:13:40.167000+00:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Scientist/Senior Scientist, High-Throughput Screening",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/7506d899-6fb9-4a65-b5e3-bba25e087da9",
-      "date_posted": "2026-10-22T20:14:55.137000+00:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Senior / Staff Power Electronics Engineer",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/08594f3f-0589-43c6-aad8-675e51da51b9",
-      "date_posted": "2026-09-08T18:14:33.809000+00:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Senior Scientist, Cardiac Preservation (Organ Perfusion)",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/08c42799-d838-4955-99a9-05249c67fa5d",
-      "date_posted": "2026-05-27T21:59:09.021000+00:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Sensing & Instrumentation Engineer",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/3dcbba0f-6e10-4771-990b-81e68f8f987d",
-      "date_posted": "2026-09-22T21:04:48.468000+00:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Strategic Finance Manager",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/5c5962bb-6a34-4b76-a44f-4e0d9a09824a",
-      "date_posted": "2026-09-23T21:30:54.991000+00:00"
-    },
-    {
-      "company": "Until Labs",
-      "title": "Veterinarian/Anesthesiologist",
-      "location": "Bay Area",
-      "url": "https://jobs.lever.co/until/f34d25d0-946a-4198-8047-4171cada8bad",
-      "date_posted": "2026-10-21T19:42:46.288000+00:00"
     }
   ]
 }
